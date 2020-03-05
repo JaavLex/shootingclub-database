@@ -24,11 +24,15 @@
         </tr>
         <tr>
           <td>
-          <label>Possedez vous une arme? <label> yes <input type="radio" name="wp_yesno" value="wp_yes"></label> <label> no <input type="radio" name="wp_yesno" value="wp_no"></label> </input></label>
+            <label>Possedez vous une arme?
+              <label> yes <input type="radio" name="wp_yesno" value="Y"></label>
+              <label> no <input type="radio" name="wp_yesno" value="N"></label></input>
+            </label>
           </td>
         </tr>
       <table>
-      <input type="submit" value="Submit">
+      <input type="submit" value="Submit" />
     </form>
+    <?php echo $foo; ?>
   </body>
 </html>
