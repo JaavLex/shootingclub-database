@@ -1,7 +1,4 @@
 <?php
-// $servername = "db";
-// $username = "root";
-// $password = "Pomme";
 $l_name = $_POST["last_name"];
 $f_name = $_POST["first_name"];
 $dob = $_POST["date_of_birth"];
@@ -20,4 +17,7 @@ if(mysqli_query($link, $sql)){
 }
 
 mysqli_close($link);
+
+header("Location: http://localhost:82?success=1");
+exit();
 ?>

@@ -1,0 +1,12 @@
+body {
+  background-color: #FAFAFA
+}
+
+.mainform {
+  background-color: #FF00F3
+}
+
+#block-container {
+  display: flex;
+  justify-content: center;
+}
