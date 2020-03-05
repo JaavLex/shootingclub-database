@@ -33,6 +33,5 @@
       <table>
       <input type="submit" value="Submit" />
     </form>
-    <?php echo $foo; ?>
   </body>
 </html>
