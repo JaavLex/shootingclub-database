@@ -10,3 +10,11 @@ body {
   display: flex;
   justify-content: center;
 }
+
+h1 {
+  font-size: 30px;
+  font-family: Arial;
+  background-color: #134564;
+  color: #876511;
+  
+}
