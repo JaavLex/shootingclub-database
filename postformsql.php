@@ -18,6 +18,6 @@ if(mysqli_query($link, $sql)){
 
 mysqli_close($link);
 
-header("Location: http://localhost:82?success=1");
+header("Location: http://localhost:82");
 exit();
 ?>

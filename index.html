@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+  <div id="bg-image">
+    <div id="block-container">
+      <form action="./postformsql.php" method="post">
+        <table class="mainform">
+          <tr>
+            <td><label>Nom </label></td>
+            <td><input type="text" name="last_name"></input></td>
+          </tr>
+          <tr>
+            <td><label>Prenom </label></td>
+            <td><input type="text" name="first_name"></input></td>
+          </tr>
+          <tr>
+            <td><label>Date de naissance</label></td>
+            <td><input type="date" name="date_of_birth"></input></td>
+          </tr>
+          <tr>
+            <td><label>Detenteur d'arme </label></td>
+            <td>
+              <div class="select-switch">
+                <input type="radio" id="radio-yes" name="wp_yesno" value="Y"></input>
+                <label for="radio-yes"> Oui </label>
+                <input type="radio" id="radio-no" name="wp_yesno" value="N"></input>
+                <label for="radio-no"> Non </label>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="submit" value="Submit" />
+            </td>
+          </tr>
+          <table>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
