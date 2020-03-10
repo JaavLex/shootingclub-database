@@ -13,34 +13,38 @@
       <form action="./postformsql.php" method="post">
         <table class="mainform">
           <tr>
-            <td><label>Nom </label></td>
-            <td><input type="text" name="last_name"></input></td>
+            <div class="form__group">
+            <td><h2>S'enregistrer</h2><input type="text" name="last_name" class="form__field" placeholder="Nom" id="name" required></input></td>
+            </div>
           </tr>
           <tr>
-            <td><label>Prenom </label></td>
-            <td><input type="text" name="first_name"></input></td>
+            <td><input type="text" name="first_name" class="form__field" placeholder="Prénom" id="firstname" required></input></td>
           </tr>
           <tr>
-            <td><label>Date de naissance</label></td>
-            <td><input type="date" name="date_of_birth"></input></td>
+            <td><input type="date" name="date_of_birth" class="form__field" placeholder="Date de naissance" id="dateofbirth" required></input></td>
           </tr>
           <tr>
-            <td><label>Detenteur d'arme </label></td>
             <td>
               <div class="select-switch">
+                <label class="block-holder">Detenteur d'arme?
                 <input type="radio" id="radio-yes" name="wp_yesno" value="Y"></input>
                 <label for="radio-yes"> Oui </label>
                 <input type="radio" id="radio-no" name="wp_yesno" value="N"></input>
                 <label for="radio-no"> Non </label>
+                </label>
               </div>
             </td>
+
           </tr>
           <tr>
             <td>
               <input type="submit" value="Submit" />
             </td>
+            <td>
+              <td><input type="button" value="Liste des gens" onclick="parent.location='peoplelist.php'"> </input></td>
+            </td>
           </tr>
-          <table>
+          </table>
       </form>
     </div>
   </div>
